@@ -5,7 +5,10 @@ class CreateColors < ActiveRecord::Migration[5.2]
       t.string :group
       t.boolean :starred
       t.string :website_placement
-      t.boolean :final
+      t.string :status
+      t.text :notes
+      t.boolean :as_gradient
+      t.string :gradient_css
 
       t.timestamps
     end

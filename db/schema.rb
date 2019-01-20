@@ -20,7 +20,10 @@ ActiveRecord::Schema.define(version: 2019_01_20_193438) do
     t.string "group"
     t.boolean "starred"
     t.string "website_placement"
-    t.boolean "final"
+    t.string "status"
+    t.text "notes"
+    t.boolean "as_gradient"
+    t.string "gradient_css"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

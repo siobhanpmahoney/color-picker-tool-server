@@ -42,7 +42,7 @@ class Api::V1::ColorsController < ApplicationController
   private
 
   def color_params
-    params.require(:color).permit(:hex, :group, :starred, :website_placement, :final)
+    params.require(:color).permit(:hex, :group, :starred, :website_placement, :status, :notes, :as_gradient, :gradient_css)
   end
 
 
